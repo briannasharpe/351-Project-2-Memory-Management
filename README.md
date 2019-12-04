@@ -2,6 +2,7 @@
 
 – Team members: 
 Brianna Sharpe briannasharpe@csu.fullerton.edu
+Maria Diaz mardiaz353@csu.fullerton.edu
 
 – Programming language you used: C++
 
