@@ -24,13 +24,13 @@ int main() {
 	// page size
 	switch (pageSize) {
 		case 1:
-			PageSize = 100;
+			pageSize = 100;
 			break;
 		case 2:
-			PageSize = 200;
+			pageSize = 200;
 			break;
 		case 3:
-			PageSize = 400;
+			pageSize = 400;
 			break;
 		default:
 			cout << "Invalid input";
