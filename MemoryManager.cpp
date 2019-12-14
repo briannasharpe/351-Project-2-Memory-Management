@@ -72,11 +72,11 @@ int main() {
 
 	for (int i = 0; i < processes; i++) {
 		// set defaults
+		processArray[i].frames = int(ceil(double(processArray[i].addressSpace)/pageSize)); // ceil to round up value
 		processArray[i].startTime = -1;
 		processArray[i].waitTime = 0;
 		processArray[i].turnaroundTime = 0;
-		processArray[i].frames = int(ceil(double(processArray[i].addressSpace)/pageSize)); // ceil to round up value
-		
+				
 		// define process values
 		infile >> processArray[i].ID;
 		infile >> processArray[i].arrivalTime;
@@ -94,7 +94,7 @@ int main() {
 	 * ****************** MEMORY MANAGER ****************** *
 	 * **************************************************** */
 	int time = 0; // overall time
-	int arraySize = memorySize / pageSize; // number of free frames	
+	int arraySize = memorySize / pageSize; // array size
 	int freeFrames = arraySize; // number of free frames
 	int currentProcess = 0; // current process for loops
 	int completeProcesses = 0; // number of completed processes
@@ -107,8 +107,8 @@ int main() {
 	// arrays
 	vector<Process> processQueue;
 	vector<int> inputQueue; // process queue inputs
-	vector<int> memoryArray(arraySize,0); // memory map
 	vector<int> pageArray(arraySize,0); // pages in memory
+	vector<int> memoryArray(arraySize,0); // memory map
 
 	// while all processes are incomplete
 	while (processes != completeProcesses) {
@@ -196,7 +196,7 @@ int main() {
 	for (int i = 0; i < processes; i++) {
 		totalTurnaround += processArray[i].turnaroundTime; // add all turnaround times
 	} // for
-	cout << totalTurnaround;
+	
 	averageTurnaround = double(totalTurnaround) / processes;
 	
 	// print average turnaround time
