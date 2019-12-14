@@ -10,7 +10,7 @@ struct Process {
 	int ID; // process ID
 	int pieces; // number of pieces of memory
 	int addressSpace; // total size of address space
-	int frames;
+	int frames; // number of frames
 
 	// time related variables	
 	int arrivalTime, startTime, completionTime, turnaroundTime, waitTime;
