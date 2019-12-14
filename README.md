@@ -7,7 +7,8 @@ Maria Diaz mardiaz353@csu.fullerton.edu
 – Programming language you used: C++
 
 – How to execute:
-(platform, commands in each steps and a screenshot of one testing)
+g++ -o mm MemoryManager.cpp
+./mm
 
 – How did your team collaborate on your projects? Illustrate each member’s
 contribution:
