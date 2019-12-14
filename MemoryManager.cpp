@@ -242,7 +242,6 @@ void printQueue(vector<int> queue) {
 
 /* ********************* printMap ********************* *
  * print memory map with frames, processes, and pages
- * printMap()
  * **************************************************** */
 void printMap(Process array, int size, vector<int> memory, vector<int>& page, int pageSize) {
 	int count = 0; // page counter
