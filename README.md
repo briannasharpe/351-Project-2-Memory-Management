@@ -13,6 +13,10 @@ g++ -o mm MemoryManager.cpp
 – How did your team collaborate on your projects? Illustrate each member’s
 contribution:
 
+Brianna Sharpe: Program design, methods research, code, testing
+
+Maria Diaz: Methods research, code design chart
+
 – Anything special about your submission that we should take note of: No.
 
 
@@ -24,6 +28,7 @@ contribution:
 Resource for Design Part:
 http://www.tutorialspoint.com/software_engineering/software_design_basics.htm
 http://www.tutorialspoint.com/software_engineering/software_analysis_design_tools.htm
+https://www.lucidchart.com
 
 • Tar the contents of this directory using the following command. tar cvf [directory
 name].tar [directory name]
